@@ -3,14 +3,14 @@ import Navbar from './components/Navbar';
 import Login from './components/Login';
 import SignUp from './components/SignUp';
 import Chat from './components/Chat';
-import AddFreinds from './components/AddFreinds';
-import Notificaionforauser from './components/Notificaionforauser';
+import AddFreinds from './components/AddFriends';
+import Notificaionforauser from './components/Notificationforauser';
 import {
   BrowserRouter as Router,
   Routes,
   Route} from 'react-router-dom';
 import FetchAllUserState from './context/FetchAllUserState';
-import Socketstate from './context/Socketstate';
+import Socketstate from './context/SocketState';
 
 function App() {
   return (
