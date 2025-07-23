@@ -9,6 +9,50 @@
 
 ---
 
+## 🧱 Tech Stack
+
+- **React** with functional components and Hooks  
+- **Axios** (or Fetch) for API communication  
+- **CSS Modules / SCSS** for scoped styling  
+- **json-server** (optional) for local mock chat API  
+
+---
+
+## 🔍 How It Works
+
+1. On load, messages are fetched from the API and displayed in chronological order.  
+2. A user types a message and clicks **Send** — the UI shows a loader and sends a POST request.  
+3. After confirmation from the server, the sent message appears in the chat.  
+4. The conversation scrolls automatically to show the most recent messages.  
+
+---
+
+## 🛠️ Usage and Customization
+
+- **API Endpoint**: Customize the base URL in a central config (e.g., `.env` or `api.js`)  
+- **Message Format**: Each message should include `{ id, text, sender, timestamp }`  
+- **Styling**: Modify colors, fonts, or layout in the `App.css` (or SCSS) file  
+- **Auto-scroll**: Implement smooth scrolling to the bottom when new messages arrive  
+
+---
+
+## 🛡️ Limitations & To‑Do
+
+- ❌ No real-time updates — polling or WebSocket integration could make it live  
+- 🔐 No authentication — every user is treated the same; sessions are stateless  
+- ⚠️ Limited error handling — currently shows minimal feedback on failures  
+- 🕓 Could add timestamps & read receipts to improve UX  
+
+---
+
+## 🧭 Ideal For
+
+- ✅ Beginners learning React Hooks, component state, and asynchronous flows  
+- ✅ Quick demos of chat UIs with mock APIs (without heavy backend)  
+- ✅ Portfolio showcases of dynamic, interactive React applications  
+
+---
+
 ## 🚀 Getting Started
 
 Follow these steps to run ChatGram locally:
@@ -32,4 +76,3 @@ npm start
 yarn start
 
 # Step 5: Open http://localhost:3000 in your browser
-
