@@ -8,6 +8,11 @@
 - 🎨 **Enjoy clean, responsive styling** for chat bubbles and layout  
 
 ---
+## 🔍 LLD
+
+<img width="640" height="376" alt="1753285987393" src="https://github.com/user-attachments/assets/71984c24-2495-4eda-9d04-16bac89c7c37" />
+
+---
 
 ## 🧱 Tech Stack
 
@@ -17,7 +22,6 @@
 - **json-server** (optional) for local mock chat API  
 
 ---
-
 ## 🔍 How It Works
 
 1. On load, messages are fetched from the API and displayed in chronological order.  
