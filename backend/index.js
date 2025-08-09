@@ -1,14 +1,16 @@
 //mongodb://localhost:27017/chatgram?readPreference=primary&appname=MongoDB%20Compass&directConnection=true&ssl=false
-const express = require("express");
-const cors = require("cors");
-const socketIo = require("socket.io");
-const ChatMessage = require("./models/ChatMessages.js")
-const Typing = require("./models/Typing.js")
-const connectToMongo = require("./database.js")
-connectToMongo();
+import express from "express";
+import cors from "cors";
+import ChatMessage from './models/ChatMessages.js';
+import Typing from './models/Typing.js';
+import socketIo from 'socket.io';
+import db from './database.js';
+
 const app = express();
+
 app.use(cors());
 app.use(express.json());
+
 const port = 5000
 const server = app.listen(port, () => {
     console.log(`App listening at http://localhost:${port}`);
